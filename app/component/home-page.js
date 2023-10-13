@@ -25,7 +25,7 @@ const HomePage = () => {
       <section id="about" className="p-8">
         <h2 className="text-2xl font-semibold">About Me</h2>
         <p>
-          Welcome to my portfolio website. I'm a web developer and designer passionate about creating beautiful and functional websites. I have experience in...
+          Welcome to my portfolio website. I am a web developer and designer passionate about creating beautiful and functional websites. I have experience in...
         </p>
       </section>
       <section id="portfolio" className="p-8">
@@ -47,7 +47,7 @@ const HomePage = () => {
       </section>
       <section id="contact" className="p-8">
         <h2 className="text-2xl font-semibold">Contact Me</h2>
-        <p>If you'd like to get in touch, feel free to email me at your@email.com or connect with me on social media:</p>
+        <p>If you like to get in touch, feel free to email me at your@email.com or connect with me on social media:</p>
         {/* Add social media icons and contact information here */}
       </section>
       <footer className="bg-blue-500 p-4 text-white text-center">
