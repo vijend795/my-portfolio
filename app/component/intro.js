@@ -10,7 +10,7 @@ import { FaGithubSquare } from "react-icons/fa";
 
 const Intro = () => {
   return (
-    <div className="flex flex-col justify-start items-center bg-gray-100 min-h-screen px-5 rounded-lg py-3vsc">
+    <div className="flex flex-col justify-start items-center bg-gray-100  px-5 rounded-lg py-3">
       <div>
         
       <Image

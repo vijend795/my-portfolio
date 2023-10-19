@@ -1,8 +1,9 @@
 // pages/index.js
-import React from 'react';
-import Image from 'next/image';
-import profilepic from "@/public/profilePic.jpeg"
-import Link from 'next/link';
+import React from "react";
+import Image from "next/image";
+import profilepic from "@/public/profilePic.jpeg";
+import Link from "next/link";
+import { projectsData } from "../data/data_cv";
 
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
@@ -10,44 +11,51 @@ import { FaGithubSquare } from "react-icons/fa";
 
 const Projects = () => {
   return (
-    <div className="flex flex-col justify-start items-center bg-gray-100 min-h-screen px-5 rounded-lg py-3vsc">
-    <h1> All Projects</h1>
-      <div className='mb-10 mt-4 px-4 text-sm font-medium !leading-[1.5] sm:text-sm rounded-full text-center text-gray-500'> Brief Introduction Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum fugiat quidem soluta libero quaerat saepe sed voluptas iure doloribus commodi non, laborum qui aliquam eius placeat enim quam temporibus nostrum id ratione nisi quos architecto. Totam ullam inventore atque iusto ad laboriosam tempora beatae, laborum labore et cum aliquam facere nihil possimus aspernatur reprehenderit aperiam eum impedit doloribus fuga expedita rerum repudiandae neque debitis! Voluptatibus, nisi? Perspiciatis repellendus nulla facere facilis temporibus impedit aliquam accusantium culpa commodi cupiditate animi ut alias, obcaecati, ab nisi suscipit iste corporis incidunt quaerat. Quasi, voluptas quod unde beatae illum iure quam consequuntur voluptatibus. At?</div>
-    <div className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium'> 
-    <Link
-          href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-          
-        >
-          Contact me here{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-        </Link>
+    <div className="flex flex-col justify-start items-center bg-white  px-5 rounded-lg py-3">
+      <h1> All Projects</h1>
+      <div>
+        {/* projects detail Section */}
+        {projectsData.map((project) => (
+          <div key={project.title} className="group mb-3 sm:mb-8 last:mb-0">
+            <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+              <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
+                <h3 className="text-2xl font-semibold">{project.title}</h3>
+                <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
+                  {project.description}
+                </p>
+                <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+                  {project.tags.map((tag, index) => (
+                    <li
+                      className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                      key={index}
+                    >
+                      {tag}
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-        <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/CV.pdf"
-          download
-        >
-          Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-        </a>
+              <Image
+                src={project.imageUrl}
+                alt="Project I worked on"
+                quality={95}
+                className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+        transition 
+        group-hover:scale-[1.04]
+        group-hover:-translate-x-3
+        group-hover:translate-y-3
+        group-hover:-rotate-2
 
-        <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://linkedin.com"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
+        group-even:group-hover:translate-x-3
+        group-even:group-hover:translate-y-3
+        group-even:group-hover:rotate-2
 
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com"
-          target="_blank"
-        >
-          <FaGithubSquare />
-        </a>
-    </div>
+        group-even:right-[initial] group-even:-left-40"
+              />
+            </section>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
