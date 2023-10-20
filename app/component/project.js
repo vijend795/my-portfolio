@@ -11,7 +11,7 @@ import { FaGithubSquare } from "react-icons/fa";
 
 const Projects = () => {
   return (
-    <div className="flex flex-col justify-start items-center bg-white  px-5 rounded-lg py-3">
+    <div className="flex flex-col justify-start items-center bg-white  px-5 rounded-lg my-6">
       <h1> All Projects</h1>
       <div>
         {/* projects detail Section */}
