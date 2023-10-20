@@ -1,15 +1,13 @@
 "use client";
 
 import React from "react";
-
 import { experiencesData } from "../data/data_cv";
-import TimelineItem from "./subComponent/timeLine";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { HiDownload } from "react-icons/hi";
+
 
 export default function Experience() {
   return (
