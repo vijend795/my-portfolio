@@ -7,14 +7,14 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import Heading from "./subComponent/heading";
 
 
 export default function Experience() {
   return (
     <section className="scroll-mt-28 mb-28 sm:mb-40">
-      <h1 className="text-3xl font-bold mb-6 flex justify-center py-6">
-        Experience
-      </h1>
+     
+      <Heading >Experience </Heading>
 
       <VerticalTimeline lineColor="white">
         {experiencesData.map((item, index) => (

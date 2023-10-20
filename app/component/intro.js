@@ -10,7 +10,7 @@ import { FaGithubSquare } from "react-icons/fa";
 
 const Intro = () => {
   return (
-    <div className="flex flex-col justify-start items-center bg-gray-100  px-5 rounded-lg py-3">
+    <div className=" flex flex-col justify-start items-center px-5 rounded-lg py-3 max-w-6xl">
       <div>
         
       <Image
@@ -23,7 +23,16 @@ const Intro = () => {
               className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
       </div>
-      <div className='mb-10 mt-4 px-4 text-sm font-medium !leading-[1.5] sm:text-sm rounded-full text-center text-gray-500'> Brief Introduction Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum fugiat quidem soluta libero quaerat saepe sed voluptas iure doloribus commodi non, laborum qui aliquam eius placeat enim quam temporibus nostrum id ratione nisi quos architecto. Totam ullam inventore atque iusto ad laboriosam tempora beatae, laborum labore et cum aliquam facere nihil possimus aspernatur reprehenderit aperiam eum impedit doloribus fuga expedita rerum repudiandae neque debitis! Voluptatibus, nisi? Perspiciatis repellendus nulla facere facilis temporibus impedit aliquam accusantium culpa commodi cupiditate animi ut alias, obcaecati, ab nisi suscipit iste corporis incidunt quaerat. Quasi, voluptas quod unde beatae illum iure quam consequuntur voluptatibus. At?</div>
+      <div className='mb-10 mt-4 px-4 text-xl font-medium !leading-[1.5] sm:text-sm rounded-full text-center text-black'
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}> 
+      <span className="font-bold text-xl">Hello, I'm Vijendra Singh </span>
+      <br></br>
+      <p className='text-lg'>
+      Brief Introduction Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum fugiat quidem soluta libero quaerat saepe sed voluptas iure doloribus commodi non, laborum qui aliquam eius placeat enim quam temporibus nostrum id ratione nisi quos architecto. Totam ullam inventore atque iusto ad laboriosam tempora beatae, laborum labore et cum aliquam facere nihil possimus aspernatur reprehenderit aperiam eum impedit doloribus fuga expedita rerum repudiandae neque debitis! Voluptatibus, nisi? Perspiciatis repellendus nulla facere facilis temporibus impedit aliquam accusantium culpa commodi cupiditate animi ut alias, obcaecati, ab nisi suscipit iste corporis incidunt quaerat. Quasi, voluptas quod unde beatae illum iure quam consequuntur voluptatibus. At?
+      </p>
+      
+      </div>
     <div className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium'> 
     <Link
           href="#contact"

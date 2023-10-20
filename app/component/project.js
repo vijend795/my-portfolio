@@ -8,11 +8,13 @@ import { projectsData } from "../data/data_cv";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import Heading from "./subComponent/heading";
 
 const Projects = () => {
   return (
-    <div className="flex flex-col justify-start items-center bg-white  px-5 rounded-lg my-6">
-      <h1> All Projects</h1>
+    <div className="flex flex-col justify-start items-center px-5 rounded-lg my-6">
+      
+      <Heading>My Projects</Heading>
       <div>
         {/* projects detail Section */}
         {projectsData.map((project) => (
