@@ -12,7 +12,7 @@ import Heading from "./subComponent/heading";
 
 const Projects = () => {
   return (
-    <div className="flex flex-col justify-start items-center px-5 rounded-lg my-6">
+    <section  id='projects' className="flex flex-col justify-start items-center px-5 rounded-lg my-6">
       
       <Heading>My Projects</Heading>
       <div>
@@ -58,7 +58,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

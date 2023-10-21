@@ -12,8 +12,7 @@ import Heading from "./subComponent/heading";
 
 export default function Experience() {
   return (
-    <section className="scroll-mt-28 mb-28 sm:mb-40">
-     
+    <section id ='experience' className="scroll-mt-28 mb-28 sm:mb-40">
       <Heading >Experience </Heading>
 
       <VerticalTimeline lineColor="white">

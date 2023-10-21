@@ -3,7 +3,7 @@ import Heading from "./subComponent/heading";
 
 const ContactUs = () => {
   return (
-    <div className="container mx-auto p-6">
+    <section id ='contact' className="container mx-auto p-6">
       <Heading>Contact Me</Heading>
       <form className="max-w-md mx-auto">
         <div className="mb-4">
@@ -51,7 +51,7 @@ const ContactUs = () => {
           </button>
         </div>
       </form>
-    </div>
+    </section>
   );
 };
 

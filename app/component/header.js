@@ -1,11 +1,33 @@
+'use client'
 // pages/index.js
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { navLinks } from "../data/data_cv";
 import Link from "next/link";
 // import { motion } from "framer-motion";
 
 export default function Header() {
+  const [activeSection,setActiveSection]=useState(null)
+  useEffect(()=>{
+    const observer= new IntersectionObserver(
+      (entries)=>{
+        entries.forEach((entry)=>{
+          if (entry.isIntersecting){
+            setActiveSection(`#${entry.target.id}`);
+            console.log("Active Section:", activeSection);
+          }
+        })
+      },
+      {root:null,rootMargin:'0px',threshold:0.7}
+    );
+    document.querySelectorAll('section').forEach((section)=>{
+      observer.observe(section)
+    });
+    return () => {
+      observer.disconnect();
+    };
+  },[activeSection])
+
   return (
     <header className="z-[999] relative bg-green-400 flex justify-center">
       <nav className=" flex mt-10 fixed top-0  ">
@@ -14,7 +36,11 @@ export default function Header() {
             <li key={link.name} className=" ">
               <Link
                 href={link.link}
-                className="text-gray-400 text-xl font-semibold hover:text-black"
+                
+                className={` text-xl font-semibold hover:text-black ${
+                  activeSection === `${link.link}`? 'text-blue-300': 'text-gray-400'
+                  // activeSection === 'contact'? 'text-blue-300': 'text-gray-400'
+                }`}
               >
                 {link.name}
               </Link>
