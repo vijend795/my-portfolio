@@ -1,7 +1,8 @@
 import React from "react";
 import Heading from "./subComponent/heading";
 
-const ContactUs = () => {
+
+    export default function ContactUs() {
   return (
     <section id ='contact' className="container mx-auto p-6">
       <Heading>Contact Me</Heading>
@@ -55,4 +56,3 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;

@@ -13,8 +13,13 @@ export default function Header() {
       (entries)=>{
         entries.forEach((entry)=>{
           if (entry.isIntersecting){
-            setActiveSection(`#${entry.target.id}`);
-            console.log("Active Section:", activeSection);
+            const sectionId = entry.target.id;
+           
+            console.log("Active Section:", sectionId);
+            
+            if (sectionId) {
+              setActiveSection(`#${sectionId}`);
+            }
           }
         })
       },
@@ -26,7 +31,7 @@ export default function Header() {
     return () => {
       observer.disconnect();
     };
-  },[activeSection])
+  },[])
 
   return (
     <header className="z-[999] relative bg-green-400 flex justify-center">
