@@ -8,6 +8,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import Heading from "./subComponent/heading";
+import ExperienceCard from "./subComponent/experienceCard";
 
 
 export default function Experience() {
@@ -19,6 +20,7 @@ export default function Experience() {
       <VerticalTimeline lineColor="white">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
+            
             <VerticalTimelineElement
               contentStyle={{
                 background: "f3f4f6",
@@ -39,11 +41,14 @@ export default function Experience() {
                 fontSize: "1.5rem",
               }}
             >
-              <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="font-normal !mt-0">{item.location}</p>
+              <ExperienceCard item={item}/>
+              {/* {item.title} */}
+              {/* <h3 className="font-semibold capitalize">{item.title}</h3> */}
+
+              {/* <p className="font-normal !mt-0">{item.location}</p>
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
-              </p>
+              </p> */}
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
