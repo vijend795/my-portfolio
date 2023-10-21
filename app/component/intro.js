@@ -26,7 +26,7 @@ const Intro = () => {
       <div className='mb-10 mt-4 px-4 text-xl font-medium !leading-[1.5] sm:text-sm rounded-full text-center text-black'
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}> 
-      <span className="font-bold text-xl">`Hello, I'm Vijendra Singh` </span>
+      <span className="font-bold text-xl">Hello, I am Vijendra Singh </span>
       <br></br>
       <p className='text-lg'>
       Brief Introduction Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum fugiat quidem soluta libero quaerat saepe sed voluptas iure doloribus commodi non, laborum qui aliquam eius placeat enim quam temporibus nostrum id ratione nisi quos architecto. Totam ullam inventore atque iusto ad laboriosam tempora beatae, laborum labore et cum aliquam facere nihil possimus aspernatur reprehenderit aperiam eum impedit doloribus fuga expedita rerum repudiandae neque debitis! Voluptatibus, nisi? Perspiciatis repellendus nulla facere facilis temporibus impedit aliquam accusantium culpa commodi cupiditate animi ut alias, obcaecati, ab nisi suscipit iste corporis incidunt quaerat. Quasi, voluptas quod unde beatae illum iure quam consequuntur voluptatibus. At?
