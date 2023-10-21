@@ -35,29 +35,80 @@ export const navLinks = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Parking Enforcement Officer",
+    company:'Wilson Parking NZ Limited',
+    location: "Wellington, New Zealand",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "As a initial start, start working with Wilson Parking as a parking Enforcement officer,currently working with automobile solution of parking enforcement which includes handling computer generated data on real time to enforce parking right .",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "June 2022 - Present",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Real Estate Consultant",
+    company:'Realty Redefine',
+    location: "Gurgaon, India",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I worked as a Real Estate Consultant for commercial leasing also develop online search portal, social media manager and  data management system for the business in VBA ",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "June 2018 - March 2022",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Associate Partner",
+    company:'Transaction Point',
+    location: "Gurgaon, India",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I Worked as Associate Partner for Sales and Marketing for commercial and residential project.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "July 2012 - June 2013",
   },
+  {
+    title: "Manager - Sales and Marketing",
+    company:'Global Realty Ventures Limited',
+    location: "Delhi, India",
+    description:
+      "I worked as a sales and marketing manager and managed commercial/retail properties across Delhi/NCR ",
+    icon: React.createElement(FaReact),
+    date: "March 2011 - July 2012",
+  },
+  {
+    title: "Project Manager",
+    company:'Global School of Animation and Games',
+    location: "Delhi, India",
+    description:
+      "I worked as a property consultant for commercial leasing and Leased out commercial office space, warehouse, factory space in Gurgaon and worked with brand Like Kyocera, Havells , Dr, Batra , Call Health ,Third eyes, Connect Cue , Omni Vision , Now Flots , Footprints , Heithkamp , Nimbuzz etc",
+    icon: React.createElement(FaReact),
+    date: "July 2013 - May 2018",
+  },
+  {
+    title: "Transaction Manager",
+    company:'Leasing India private Limited',
+    location: "Delhi, India",
+    description:
+      "I worked as a property consultant for commercial leasing and Leased out commercial office space, warehouse, factory space in Gurgaon and worked with brand Like Kyocera, Havells , Dr, Batra , Call Health ,Third eyes, Connect Cue , Omni Vision , Now Flots , Footprints , Heithkamp , Nimbuzz etc",
+    icon: React.createElement(FaReact),
+    date: "July 2013 - May 2018",
+  },
+  {
+    title: "Transaction Manager",
+    company:'Leasing India private Limited',
+    location: "Delhi, India",
+    description:
+      "I worked as a property consultant for commercial leasing and Leased out commercial office space, warehouse, factory space in Gurgaon and worked with brand Like Kyocera, Havells , Dr, Batra , Call Health ,Third eyes, Connect Cue , Omni Vision , Now Flots , Footprints , Heithkamp , Nimbuzz etc",
+    icon: React.createElement(FaReact),
+    date: "July 2013 - May 2018",
+  },
+  {
+    title: "Transaction Manager",
+    company:'Leasing India private Limited',
+    location: "Delhi, India",
+    description:
+      "I worked as a property consultant for commercial leasing and Leased out commercial office space, warehouse, factory space in Gurgaon and worked with brand Like Kyocera, Havells , Dr, Batra , Call Health ,Third eyes, Connect Cue , Omni Vision , Now Flots , Footprints , Heithkamp , Nimbuzz etc",
+    icon: React.createElement(FaReact),
+    date: "July 2013 - May 2018",
+  },
+  
+
+
 ] 
 export const projectsData = [
   {
