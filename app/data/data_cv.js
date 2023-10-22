@@ -4,6 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
+import projectImage2 from '@/public/images/projectPic/2/mobileView/1.png'
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const navLinks = [
@@ -113,19 +114,23 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "CorpComment",
+    type:'College Project',
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
     imageUrl: corpcommentImg,
-    projectLink:'',
+    projectLink:'https://github.com/vijend795/Project1_HomeQuest.git',
   },
   {
-    title: "rmtDev",
+    id: "2",
+    title: "GoNZ -Travel Website",
+    type:'College Project-Solo',
+    date:'Q3 2023',
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-    projectLink:'',
+      " Developed a college project website using Django from the ground up, focused on travel. The site features a user-friendly navigation bar with dynamic icons that highlight the current page. Utilized Django's authentication and group permission functionalities to manage access to various details and pages.",
+    tags: ["Django", "Python", "Tailwind", "sqlite3"],
+    imageUrl: projectImage2,
+    projectLink:'https://github.com/vijend795/Project2_GoNZ.git',
   },
   {
     title: "Word Analytics",
