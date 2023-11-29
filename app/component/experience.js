@@ -42,7 +42,7 @@ export default function Experience() {
               }}
             >
               <ExperienceCard item={item}/>
-              
+              {/* test */}
               {/* {item.title} */}
               {/* <h3 className="font-semibold capitalize">{item.title}</h3> */}
 
