@@ -14,7 +14,8 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="flex flex-col justify-start items-center px-5 rounded-lg mb-6 mt-20"
+      // className="flex flex-col justify-start items-center px-5 rounded-lg mb-6 mt-20"
+      className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40 flex flex-col justify-start items-center'
     >
       <Heading>My Projects</Heading>
       <div>

@@ -12,7 +12,8 @@ const Intro = () => {
   return (
     <section
       id="intro"
-      className=" flex flex-col justify-start items-center px-5 rounded-lg py-3 max-w-6xl"
+      // className=" flex flex-col justify-start items-center px-5 rounded-lg py-3 max-w-6xl"
+      className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40 flex flex-col justify-start items-center'
     >
       <div>
         <Image

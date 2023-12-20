@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { experiencesData } from "../data/data_cv";
 import {
   VerticalTimeline,
@@ -12,16 +12,29 @@ import ExperienceCard from "./subComponent/experienceCard";
 
 
 export default function Experience() {
+  const [loading,setLoading]=useState(true)
+  useEffect(()=>{
+    setTimeout(()=>{
+      setLoading(false)
+    },1000)
+  },[])
   return (
-    <section id ='experience' className="scroll-mt-28 mb-28 sm:mb-40">
+    <section id ='experience' 
+    className="scroll-mt-28 mb-28 sm:mb-40"
+    >
      
       <Heading >Experience </Heading>
 
-      <VerticalTimeline lineColor="white">
+      {loading?(
+        <p>Loading .......</p>
+      ):(
+        <VerticalTimeline lineColor="white">
         {experiencesData.map((item, index) => (
-          <React.Fragment key={index}>
-            
+          
+          < >
+  
             <VerticalTimelineElement
+              key={index}
               contentStyle={{
                 background: "f3f4f6",
                 // color: '#fff',
@@ -41,6 +54,7 @@ export default function Experience() {
                 fontSize: "1.5rem",
               }}
             >
+              
               <ExperienceCard item={item}/>
               {/* test */}
               {/* {item.title} */}
@@ -51,9 +65,13 @@ export default function Experience() {
                 {item.description}
               </p> */}
             </VerticalTimelineElement>
-          </React.Fragment>
+          </>
+          
         ))}
       </VerticalTimeline>
+      )}
+
+     
    
     </section>
   );
