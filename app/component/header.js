@@ -54,7 +54,7 @@ export default function Header() {
       <nav className=" w-full md:flex mt-10 fixed top-0 justify-center  ">
         <ul className=" flex flex-row items-center justify-center gap-5 md:gap-10 px-2 md:px-9 rounded md:rounded-full py-3 bg-white">
           {navLinks.map((link) => (
-            <li key={link.name} className=" ">
+            <li key={link.name} className=" ">HI
               <Link
                 href={link.link}
                 
