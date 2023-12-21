@@ -20,16 +20,18 @@ const Experience = () => {
       // className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40 flex flex-col justify-start items-center'
     >
       <Heading>Experience</Heading>
+      
       <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px lg:before:mx-auto lg:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
         {experiencesData.map((item, index) => (
           <div
             key={index}
             className="relative flex items-center justify-between lg:justify-normal lg:odd:flex-row-reverse group is-active "
           >
+  
             <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-blue-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 lg:order-1 lg:group-odd:-translate-x-1/2 lg:group-even:translate-x-1/2">
               {item.icon}
             </div>
-
+            
             <div className="w-[calc(100%-4rem)] lg:w-[calc(50%-2.5rem)] bg-white p-4 rounded-xl border border-slate-200 shadow ">
               <div
                 className={`flex items-center w-full ${
@@ -40,21 +42,8 @@ const Experience = () => {
                   {item.date}
                 </span>
               </div>
-              {/* adding any data from this point cause problem detecting experience section while scrolling  */}
-              {/* <ExperienceCard item={item} /> */}
+                  <ExperienceCard item={item} index={index} />
 
-              <div
-                className={`flex flex-col  w-full  ${
-                  index % 2 == 0 ? "lg:items-start " : "lg:items-end "
-                }   mb-1 `}
-              >
-                <div className="font-bold text-slate-900">{item.title}</div>
-                <div>{item.location}</div>
-                <div className="text-slate-500 max-w-[1200px] text-justify">
-                  {item.description}
-                </div>
-              </div>
-              
             </div>
           </div>
         ))}

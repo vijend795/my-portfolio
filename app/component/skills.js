@@ -9,10 +9,17 @@ const Skills = () => {
        <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
 
       {
-        skillsData.map((skill)=>(
-          <div key={skill} className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80">
-            {skill}
-          </div>
+        skillsData.map((skill,index)=>(
+          <div key={index}>
+          {skill.status==="Active" ?(
+            <div key={skill.name} className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80">
+            
+            {skill.name}
+            
+            </div>
+            ):null}
+            </div>
+          
         ))
       }
       </ul>

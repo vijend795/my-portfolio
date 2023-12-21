@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function Header() {
   const [activeSection,setActiveSection]=useState(null)
-  let dynamicThreshold = 0.4; // Default threshold
+  let dynamicThreshold = 0.7; // Default threshold
   useEffect(()=>{
     const observer= new IntersectionObserver(
       (entries)=>{

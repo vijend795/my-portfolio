@@ -13,7 +13,7 @@ const Intro = () => {
     <section
       id="intro"
       // className=" flex flex-col justify-start items-center px-5 rounded-lg py-3 max-w-6xl"
-      className='mt-4 mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40 flex flex-col justify-start items-center'
+      className="mt-4 mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40 flex flex-col justify-start items-center"
     >
       <div>
         <Image
@@ -26,28 +26,38 @@ const Intro = () => {
           className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
         />
       </div>
-      
+
       <div
-        className="mb-10 mt-4 px-4 text-xl font-medium !leading-[1.5] sm:text-sm rounded-full text-center text-black"
+        className="mb-10 mt-4 px-4 text-xl font-medium !leading-[1.5] sm:text-sm rounded-full  text-center text-black"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold text-xl">Hello, I am Vijendra Singh </span>
-        <br></br>
-        <p className="text-lg">
-          Brief Introduction Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Eum fugiat quidem soluta libero quaerat saepe sed voluptas iure
-          doloribus commodi non, laborum qui aliquam eius placeat enim quam
-          temporibus nostrum id ratione nisi quos architecto. Totam ullam
-          inventore atque iusto ad laboriosam tempora beatae, laborum labore et
-          cum aliquam facere nihil possimus aspernatur reprehenderit aperiam eum
-          impedit doloribus fuga expedita rerum repudiandae neque debitis!
-          Voluptatibus, nisi? Perspiciatis repellendus nulla facere facilis
-          temporibus impedit aliquam accusantium culpa commodi cupiditate animi
-          ut alias, obcaecati, ab nisi suscipit iste corporis incidunt quaerat.
-          Quasi, voluptas quod unde beatae illum iure quam consequuntur
-          voluptatibus. At?
-        </p>
+        <span className="font-bold text-xl font-serif">Hi, I am Vijendra Singh </span>
+
+        {/* <div className="flex text-lg text-gray-600 whitespace-pre-line rounded-full bg-red-100 text-center p-2 overflow-hidden text-wrap"> */}
+          <p className="text-lg font-sans text-ellipsis  subpixel-antialiased text-gray-600 whitespace-pre-line text-wrap text-justify p-4 rounded-full">
+            a newly minted software developer embarking on an exciting journey
+            in the world of technology. Having recently relocated to the
+            picturesque landscapes of New Zealand, I am eager to establish a new
+            chapter in my life in this vibrant and welcoming community. My
+            passion for programming and technology led me to pursue a career in
+            Software Development. Currently finish my Diploma in Software
+            Development(Level 6), I am honing my skills in various languages and
+            frameworks such as Django, React Native,Next.js, HTML, and CSS. The
+            prospect of settling in New Zealand and contributing to its dynamic
+            IT landscape is an exciting venture for me. I am enthusiastic about
+            leveraging my diverse background, which includes roles such as a
+            Real Estate Consultant and Sales and Marketing Manager, to bring a
+            unique perspective to the field. As I navigate this new phase of my
+            life, my ultimate goal is to become a proficient full-stack
+            developer, crafting innovative websites and mobile applications. I
+            am fueled by a genuine passion for technology and a commitment to
+            continuous learning. Here's to the adventures that await in this
+            beautiful land as I build a fulfilling career in Information
+            Technology!
+          </p>
+        {/* </div> */}
+        
       </div>
       <div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium">
         <Link
