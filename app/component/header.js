@@ -8,22 +8,37 @@ import Link from "next/link";
 
 export default function Header() {
   const [activeSection,setActiveSection]=useState(null)
+  let dynamicThreshold = 0.4; // Default threshold
   useEffect(()=>{
     const observer= new IntersectionObserver(
       (entries)=>{
         entries.forEach((entry)=>{
+          console.log("Observed Element:", entry.target);
+          console.log("Is Intersecting:", entry.isIntersecting);
+          console.log("Is Experience Section Intersecting:", entries.find(entry => entry.target.id === "experience")?.isIntersecting);
+
+          
+
           if (entry.isIntersecting){
             const sectionId = entry.target.id;
            
             console.log("Active Section:", sectionId);
-            
+
+            // Adjust the threshold for specific sections
+            // if (entry.target.id === "skill") {
+            //   dynamicThreshold = 0.5; // Adjusted threshold for the "Experience" section
+            // } else if (entry.target.id === "contact") {
+            //   dynamicThreshold = 0.5; // Adjusted threshold for the "Projects" section
+            // }
+            console.log("Threshold :",dynamicThreshold)
             if (sectionId) {
               setActiveSection(`#${sectionId}`);
             }
           }
         })
       },
-      {root:null,rootMargin:'0px',threshold:0.7}
+      // {root:null,rootMargin:'0px',threshold:0.7}
+      {root:null,rootMargin:'0px',threshold:dynamicThreshold}
     );
     document.querySelectorAll('section').forEach((section)=>{
       observer.observe(section)
