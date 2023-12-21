@@ -20,9 +20,8 @@ const Experience = () => {
       // className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40 flex flex-col justify-start items-center'
     >
       <Heading>Experience</Heading>
-      <div  className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px lg:before:mx-auto lg:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+      <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px lg:before:mx-auto lg:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
         {experiencesData.map((item, index) => (
-          <>
           <div
             key={index}
             className="relative flex items-center justify-between lg:justify-normal lg:odd:flex-row-reverse group is-active "
@@ -43,8 +42,7 @@ const Experience = () => {
               </div>
               {/* adding any data from this point cause problem detecting experience section while scrolling  */}
               {/* <ExperienceCard item={item} /> */}
-               
-                
+
               <div
                 className={`flex flex-col  w-full  ${
                   index % 2 == 0 ? "lg:items-start " : "lg:items-end "
@@ -56,13 +54,11 @@ const Experience = () => {
                   {item.description}
                 </div>
               </div>
-
+              
             </div>
           </div>
-          </>
         ))}
       </div>
-      
     </section>
   );
 };

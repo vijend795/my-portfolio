@@ -13,7 +13,7 @@ const Intro = () => {
     <section
       id="intro"
       // className=" flex flex-col justify-start items-center px-5 rounded-lg py-3 max-w-6xl"
-      className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40 flex flex-col justify-start items-center'
+      className='mt-4 mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40 flex flex-col justify-start items-center'
     >
       <div>
         <Image
@@ -26,6 +26,7 @@ const Intro = () => {
           className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
         />
       </div>
+      
       <div
         className="mb-10 mt-4 px-4 text-xl font-medium !leading-[1.5] sm:text-sm rounded-full text-center text-black"
         initial={{ opacity: 0, y: 100 }}
