@@ -8,10 +8,10 @@ import projectImage2 from '@/public/images/projectPic/2/mobileView/1.png'
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const navLinks = [
-  {
-    name: "Home",
-    link: "#home",
-  },
+  // {
+  //   name: "Home",
+  //   link: "#home",
+  // },
   {
     name: "Intro",
     link: "#intro",
@@ -222,7 +222,7 @@ export const projectsData = [
     type:'College Project-Solo',
     date:'Q3 2023',
     description:
-      " Developed a college project website using Django from the ground up, focused on travel. The site features a user-friendly navigation bar with dynamic icons that highlight the current page. Utilized Django's authentication and group permission functionalities to manage access to various details and pages.",
+      "Developed a college project website using Django from the ground up, focused on travel. The site features a user-friendly navigation bar with dynamic icons that highlight the current page. Utilized Django's authentication and group permission functionalities to manage access to various details and pages.",
     tags: ["Django", "Python", "Tailwind", "sqlite3"],
     imageUrl: projectImage2,
     projectLink:'https://github.com/vijend795/Project2_GoNZ.git',

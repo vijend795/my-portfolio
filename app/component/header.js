@@ -51,14 +51,14 @@ export default function Header() {
   return (
     <header className="fixed top-0 z-[999] w-full bg-green-400 flex justify-center ">
 
-      <nav className=" w-full md:flex mt-10 fixed top-0 justify-center  ">
-        <ul className=" flex flex-row items-center justify-center gap-5 md:gap-10 px-2 md:px-9 rounded md:rounded-full py-3 bg-white">
+      <nav className=" w-full md:flex mt-0 md:mt-10 fixed top-0 justify-center  ">
+        <ul className=" flex flex-row items-center justify-center gap-4 md:gap-10 px-2 md:px-9 rounded md:rounded-full py-3 bg-white">
           {navLinks.map((link) => (
-            <li key={link.name} className=" ">HI
+            <li key={link.name} className=" ">
               <Link
                 href={link.link}
                 
-                className={` text-xl font-semibold hover:text-black ${
+                className={`  text-md md:text-xl font-semibold hover:text-black ${
                   activeSection === `${link.link}`? 'text-blue-300': 'text-gray-400'
                   // activeSection === 'contact'? 'text-blue-300': 'text-gray-400'
                 }`}

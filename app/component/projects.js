@@ -15,12 +15,12 @@ const Projects = () => {
     <section
       id="projects"
       // className="flex flex-col justify-start items-center px-5 rounded-lg mb-6 mt-20"
-      className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40 flex flex-col justify-start items-center'
+      className='mb-28 p-6 max-w-[53rem] scroll-mt-28 text-center sm:mb-40 flex flex-col justify-start items-center'
     >
       <Heading>My Projects</Heading>
       <div>
         {projectsData.map((project, index) => (
-          <div key={project.title} className="group mb-3 sm:mb-8 last:mb-0">
+          <div key={project.title} className="group mb-3 sm:mb-8 last:mb-0 mx-2 md:mx-0">
             <div className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
               <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
                 <h3 className="text-2xl font-semibold">{project.title}</h3>
@@ -28,7 +28,7 @@ const Projects = () => {
                 {project.description.length > 150 ? (
                   
                   <>
-                  <div className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">Hi
+                  <div className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
                     {/* {project.description} */}
                   {project.description.slice(0, 150)} ... 
                     <button className="text-blue-500 underline">

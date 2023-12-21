@@ -4,7 +4,12 @@ import Heading from "./subComponent/heading";
 
     export default function ContactUs() {
   return (
-    <section id ='contact' className="container mx-auto p-6">
+    <section 
+    id ='contact' 
+    className="container mx-auto p-6 max-w-[53rem]"
+    // className='container mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40 flex flex-col justify-start items-center'
+   
+    >
       <Heading>Contact Me</Heading>
       <form className="max-w-md mx-auto">
         <div className="mb-4">
