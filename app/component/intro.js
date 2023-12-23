@@ -53,7 +53,7 @@ const Intro = () => {
             life, my ultimate goal is to become a proficient full-stack
             developer, crafting innovative websites and mobile applications. I
             am fueled by a genuine passion for technology and a commitment to
-            continuous learning. Here's to the adventures that await in this
+            continuous learning. Here to the adventures that await in this
             beautiful land as I build a fulfilling career in Information
             Technology!
           </p>

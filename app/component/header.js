@@ -46,7 +46,7 @@ export default function Header() {
     return () => {
       observer.disconnect();
     };
-  },[])
+  },[dynamicThreshold])
 
   return (
     <header className="fixed top-0 z-[999] w-full bg-green-400 flex justify-center ">

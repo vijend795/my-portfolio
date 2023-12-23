@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import projectImage2 from '@/public/images/projectPic/2/mobileView/1.png'
+import projectImage1 from '@/public/images/projectPic/Portfoliowebsite/PortfolioWebsiteMain.png'
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const navLinks = [
@@ -208,13 +209,39 @@ export const experiencesData = [
 ] 
 export const projectsData = [
   {
-    title: "CorpComment",
-    type:'College Project',
+    id:'1',
+    title: "Portfolio Website",
+    type:'My Project',
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
-    projectLink:'https://github.com/vijend795/Project1_HomeQuest.git',
+      `Created my portfolio website to demonstrate my updated work to people.`,
+    tags: [, "Next.js 13", "Tailwind"],
+    imageUrl: projectImage1,
+    projectLink:'https://github.com/vijend795/my-portfolio.git',
+    websiteLink:'',
+  },
+  {
+    id: "2",
+    title: "GoNZ -Travel Website",
+    type:'College Project-Individual',
+    date:'Q3 2023',
+    description:
+      "Developed a college project website using Django from the ground up, focused on travel. The site features a user-friendly navigation bar with dynamic icons that highlight the current page. Utilized Django's authentication and group permission functionalities to manage access to various details and pages.",
+    tags: ["Django", "Python", "Tailwind", "sqlite3"],
+    imageUrl: projectImage2,
+    projectLink:'https://github.com/vijend795/Project2_GoNZ.git',
+    websiteLink:'',
+  },
+  {
+    id: "2",
+    title: "GoNZ -Travel Website",
+    type:'College Project-individual',
+    date:'Q3 2023',
+    description:
+      "Developed a college project website using Django from the ground up, focused on travel. The site features a user-friendly navigation bar with dynamic icons that highlight the current page. Utilized Django's authentication and group permission functionalities to manage access to various details and pages.",
+    tags: ["Django", "Python", "Tailwind", "sqlite3"],
+    imageUrl: projectImage2,
+    projectLink:'https://github.com/vijend795/Project2_GoNZ.git',
+    websiteLink:'',
   },
   {
     id: "2",
@@ -226,6 +253,19 @@ export const projectsData = [
     tags: ["Django", "Python", "Tailwind", "sqlite3"],
     imageUrl: projectImage2,
     projectLink:'https://github.com/vijend795/Project2_GoNZ.git',
+    websiteLink:'',
+  },
+  {
+    id: "2",
+    title: "GoNZ -Travel Website",
+    type:'College Project-Solo',
+    date:'Q3 2023',
+    description:
+      "Developed a college project website using Django from the ground up, focused on travel. The site features a user-friendly navigation bar with dynamic icons that highlight the current page. Utilized Django's authentication and group permission functionalities to manage access to various details and pages.",
+    tags: ["Django", "Python", "Tailwind", "sqlite3"],
+    imageUrl: projectImage2,
+    projectLink:'https://github.com/vijend795/Project2_GoNZ.git',
+    websiteLink:'',
   },
   {
     title: "Word Analytics",
