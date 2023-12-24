@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function Header() {
   const [activeSection,setActiveSection]=useState(null)
-  let dynamicThreshold = 0.7; // Default threshold
+  let dynamicThreshold = 0.2; // Default threshold
   useEffect(()=>{
     const observer= new IntersectionObserver(
       (entries)=>{
@@ -59,7 +59,7 @@ export default function Header() {
                 href={link.link}
                 
                 className={`  text-md md:text-xl font-semibold hover:text-black ${
-                  activeSection === `${link.link}`? 'text-blue-300': 'text-gray-400'
+                  activeSection === `${link.link}`? 'text-blue-400': 'text-gray-400'
                   // activeSection === 'contact'? 'text-blue-300': 'text-gray-400'
                 }`}
               >

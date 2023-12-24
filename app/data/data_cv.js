@@ -329,6 +329,18 @@ export const skillsData = [
     name: "Django",
     status:"Active"
   },
+  {
+    name: "Microsoft Excel",
+    status:"Active"
+  },
+  {
+    name: "Microsoft Word",
+    status:"Active"
+  },
+  {
+    name: "Visual Basic Application",
+    status:"Active"
+  },
  
  
   
