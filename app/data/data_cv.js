@@ -6,6 +6,8 @@ import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import projectImage2 from '@/public/images/projectPic/2/mobileView/1.png'
 import projectImage1 from '@/public/images/projectPic/Portfoliowebsite/PortfolioWebsiteMain.png'
+import projectImage3 from "@/public/images/projectPic/SonoAmore/codebasesnippet.png"
+import projectImage4 from "@/public/images/projectPic/kiwifeeds/projectImage1.png"
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const navLinks = [
@@ -213,7 +215,7 @@ export const projectsData = [
     title: "Portfolio Website",
     type:'My Project',
     description:
-      `Created my portfolio website to demonstrate my updated work to people.`,
+      `Created portfolio website to demonstrate my updated work to people and hosted on vercel for live demo `,
     tags: [, "Next.js 13", "Tailwind"],
     imageUrl: projectImage1,
     projectLink:'https://github.com/vijend795/my-portfolio.git',
@@ -232,49 +234,30 @@ export const projectsData = [
     websiteLink:'',
   },
   {
-    id: "2",
-    title: "GoNZ -Travel Website",
+    id: "3",
+    title: "Music App-Sono Amore",
     type:'College Project-individual',
-    date:'Q3 2023',
+    date:'Q4 2023',
     description:
-      "Developed a college project website using Django from the ground up, focused on travel. The site features a user-friendly navigation bar with dynamic icons that highlight the current page. Utilized Django's authentication and group permission functionalities to manage access to various details and pages.",
-    tags: ["Django", "Python", "Tailwind", "sqlite3"],
-    imageUrl: projectImage2,
-    projectLink:'https://github.com/vijend795/Project2_GoNZ.git',
+      "Developed a music application with nodejs, express and mongodb Database and setup authentication and permission and perform  curd operations over Postman.",
+    tags: ["Node.js", "Mongodb", "Express", "yaml"],
+    imageUrl: projectImage3,
+    projectLink:'https://github.com/vijend795/SonoAmoreMusicApp.git',
     websiteLink:'',
   },
   {
-    id: "2",
-    title: "GoNZ -Travel Website",
-    type:'College Project-Solo',
+    id: "4",
+    title: "Website-KiwiFeeds",
+    type:'College Project-group',
     date:'Q3 2023',
     description:
-      "Developed a college project website using Django from the ground up, focused on travel. The site features a user-friendly navigation bar with dynamic icons that highlight the current page. Utilized Django's authentication and group permission functionalities to manage access to various details and pages.",
+      "Developed a website for online rating system for restaurants  build with django framework with user permission and authentication.",
     tags: ["Django", "Python", "Tailwind", "sqlite3"],
-    imageUrl: projectImage2,
-    projectLink:'https://github.com/vijend795/Project2_GoNZ.git',
+    imageUrl: projectImage4,
+    projectLink:'https://github.com/AMarieP/IT6006_Development_of_an_Enterprise_Web_Application.git',
     websiteLink:'',
   },
-  {
-    id: "2",
-    title: "GoNZ -Travel Website",
-    type:'College Project-Solo',
-    date:'Q3 2023',
-    description:
-      "Developed a college project website using Django from the ground up, focused on travel. The site features a user-friendly navigation bar with dynamic icons that highlight the current page. Utilized Django's authentication and group permission functionalities to manage access to various details and pages.",
-    tags: ["Django", "Python", "Tailwind", "sqlite3"],
-    imageUrl: projectImage2,
-    projectLink:'https://github.com/vijend795/Project2_GoNZ.git',
-    websiteLink:'',
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
-    projectLink:'',
-  },
+ 
 ] 
 
 export const skillsData = [
