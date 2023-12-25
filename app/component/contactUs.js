@@ -49,6 +49,7 @@ export default function ContactUs() {
         console.error("Error submitting form data");
       }
     } catch (error) {
+      setSuccessStatus("success")
       alert("Email services is not available right now !!! singh.vijendra05@gmail.com")
       console.error("Error submitting form data:", error);
     }
