@@ -45,10 +45,11 @@ export default function ContactUs() {
       })
       
       } else {
-        alert("Email services is not available right now ")
+        alert("Email services is not available right now !!! mail me at singh.vijendra05@gmail.com")
         console.error("Error submitting form data");
       }
     } catch (error) {
+      alert("Email services is not available right now !!! singh.vijendra05@gmail.com")
       console.error("Error submitting form data:", error);
     }
     setIsLoading(false)
@@ -64,7 +65,7 @@ export default function ContactUs() {
       window.location.reload();
       setSuccessStatus(null)
     }
-  }, [successStatus,isLoading]);
+  }, [successStatus]);
   return (
     <section
       id="contact"
