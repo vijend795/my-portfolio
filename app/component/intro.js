@@ -1,15 +1,17 @@
-// pages/index.js
+
 import React from "react";
 import Image from "next/image";
 import profilePic from "@/public/profilePic.jpeg";
 import profilePic1 from "@/public/profilePic1.png";
 import Link from "next/link";
 
+
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 
 const Intro = () => {
+ 
   return (
     <section
       id="intro"
@@ -65,16 +67,16 @@ const Intro = () => {
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
         >
-          Contact me here{" "}
+          Contact me here
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/CV.pdf"
-          download
+          href="/CV_Vijendra_Singh.pdf"
+          download='CV_Vijendra_Singh.pdf'
         >
-          Download CV{" "}
+          Download CV
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
