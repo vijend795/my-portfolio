@@ -1,8 +1,7 @@
 var nodemailer = require("nodemailer");
 
 export async function sendMailNodemailer(subject, toEmail, message) {
-  // console.log("Email:", process.env.NODEMAILER_EMAIL);
-  // console.log("Password:", process.env.NODEMAILER_PW);
+
 
   return new Promise((resolve, reject) => {
     var transporter = nodemailer.createTransport({
