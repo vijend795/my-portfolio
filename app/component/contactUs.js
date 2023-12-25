@@ -45,12 +45,13 @@ export default function ContactUs() {
       })
       
       } else {
-        alert("Email services is not available right now !!! mail me at singh.vijendra05@gmail.com")
+        setSuccessStatus("success")
+        alert("Email services is not available right now !!! contact me at singh.vijendra05@gmail.com")
         console.error("Error submitting form data");
       }
     } catch (error) {
       setSuccessStatus("success")
-      alert("Email services is not available right now !!! singh.vijendra05@gmail.com")
+      alert("Email services is not available right now !!! mail me at singh.vijendra05@gmail.com")
       console.error("Error submitting form data:", error);
     }
     setIsLoading(false)
