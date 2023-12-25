@@ -71,7 +71,15 @@ export default function ContactUs() {
       className="container mx-auto p-6 max-w-[53rem]"
       // className='container mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40 flex flex-col justify-start items-center'
     >
-      <Heading>Contact Me</Heading>
+      <Heading>Contact Me   
+      </Heading>
+      <p className="flex justify-center mb-5 text-xs no-underline">
+          Please contact me directly at&nbsp;
+          <a href="mailto:singh.vijendra05@gmail.com" className="underline text-blue-400">
+            singh.vijendra05@gmail.com
+          </a>
+          &nbsp;or through this form
+        </p>
       <form
         className="max-w-md mx-auto"
         // method="POST"
