@@ -45,6 +45,7 @@ export default function ContactUs() {
       })
       
       } else {
+        alert("Email services is not available right now ")
         console.error("Error submitting form data");
       }
     } catch (error) {
@@ -63,7 +64,7 @@ export default function ContactUs() {
       window.location.reload();
       setSuccessStatus(null)
     }
-  }, [successStatus]);
+  }, [successStatus,isLoading]);
   return (
     <section
       id="contact"
