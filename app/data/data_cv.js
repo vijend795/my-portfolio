@@ -69,6 +69,18 @@ export const experienceTags=[
 ]
 export const experiencesData = [
   {
+    title: "Internship - Django Developer",
+    company:'Whitecliffe, School of Information Technology',
+    location: "Wellington, New Zealand",
+    description:
+    `Building a student attendance program for the institute to manage and update student information, track progress, and provide an interface for various users to update and access the required information`,
+    icon: React.createElement(CgWorkAlt),
+    date: "December 2023- till date",
+    experienceType:'job',
+    skilledLearned:['Django',"Tailwind","Postgres","Data Structure","MicroServices","Agile Project Management","GitHub","API's"],
+    status:"OnGoing",
+  },
+  {
     title: "Diploma in software Development (Level 6)",
     company:'Whitecliffe, School of Information Technology',
     location: "Wellington, New Zealand",
