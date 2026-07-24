@@ -1,13 +1,4 @@
-// pages/index.js
 import React from "react";
-import Image from "next/image";
-import profilepic from "@/public/profilePic.jpeg";
-import Link from "next/link";
-import { projectsData } from "../data/data_cv";
-
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
 import Heading from "./subComponent/heading";
 import { experiencesData } from "../data/data_cv";
 
@@ -21,14 +12,14 @@ const Experience = () => {
     >
       <Heading>Experience</Heading>
       
-      <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px lg:before:mx-auto lg:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+      <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px lg:before:mx-auto lg:before:translate-x-0 before:h-full before:w-0.5 before:bg-slate-300">
         {experiencesData.map((item, index) => (
           <div
             key={index}
-            className="relative flex items-center justify-between lg:justify-normal lg:odd:flex-row-reverse group is-active "
+            className="relative flex items-start justify-between lg:justify-normal lg:odd:flex-row-reverse group is-active "
           >
   
-            <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-blue-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 lg:order-1 lg:group-odd:-translate-x-1/2 lg:group-even:translate-x-1/2">
+            <div className="flex items-center justify-center w-10 h-10 mt-2 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-blue-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 lg:order-1 lg:group-odd:-translate-x-1/2 lg:group-even:translate-x-1/2">
               {item.icon}
             </div>
             

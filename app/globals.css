@@ -3,20 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0,0 , 0;
-  --background-start-rgb: 195, 197,204;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 195, 197, 204;
   --background-end-rgb: 255, 255, 255;
-
-
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+/*
+  The page is designed for a light background (sections use dark text on
+  light surfaces). We intentionally keep the same light theme even when the
+  OS is in dark mode, otherwise the black text would sit on a black
+  background and become unreadable.
+*/
 
 body {
   color: rgb(var(--foreground-rgb));

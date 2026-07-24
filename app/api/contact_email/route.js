@@ -1,53 +1,41 @@
 import { sendMailNodemailer } from "@/services/nodemailer";
 
-export async function GET(request) {
-    console.log("GET Request");
-    return new Response(JSON.stringify({name:"get request "}))
-}
- 
-export async function HEAD(request) {
-
-}
-
-
 export async function POST(request) {
 
   try {
-    // Do some processing...
-    const body = await request.json(); // Assuming the request body is JSON
-    // console.log(body);
+    const body = await request.json();
     const { name, email, remark } = body;
-   
-    // Assuming sendMailNodemailer returns a Promise
-    await sendMailNodemailer(
-      `Job Query send by ${name} from Portfolio Website `, 
-      email, 
-      remark
+
+    // Basic server-side validation.
+    if (!name || !email || !remark) {
+      return new Response(
+        JSON.stringify({ status: "error", message: "Please fill in all fields." }),
+        { status: 400, headers: { "Content-Type": "application/json" } }
       );
-    // console.log("Email send and response code generated ")
-    // return new Response("Email sent successfully", { status: 200 });
-    return new Response(JSON.stringify({ status: 'success', message: 'Email sent successfully' }), { status: 200 });
+    }
+
+    const subject = `Portfolio contact from ${name}`;
+    const emailBody =
+      `You received a new message from your portfolio contact form.\n\n` +
+      `Name: ${name}\n` +
+      `Email: ${email}\n\n` +
+      `Message:\n${remark}`;
+
+    await sendMailNodemailer(subject, email, emailBody);
+
+    return new Response(
+      JSON.stringify({ status: "success", message: "Your message has been sent. Thank you!" }),
+      { status: 200, headers: { "Content-Type": "application/json" } }
+    );
   } catch (error) {
     console.error("Error processing request:", error);
-    return new Response("Internal Server Error", { status: 500 });
+    return new Response(
+      JSON.stringify({
+        status: "error",
+        message: "Email service is unavailable right now. Please email me directly at singh.vijendra05@gmail.com",
+      }),
+      { status: 500, headers: { "Content-Type": "application/json" } }
+    );
   }
-    
-
-}
- 
-export async function PUT(request) {
-
-}
- 
-export async function DELETE(request) {
-
-}
- 
-export async function PATCH(request) {
-
-}
- 
-// If `OPTIONS` is not defined, Next.js will automatically implement `OPTIONS` and  set the appropriate Response `Allow` header depending on the other methods defined in the route handler.
-export async function OPTIONS(request) {
 
 }

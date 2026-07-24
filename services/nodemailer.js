@@ -1,7 +1,7 @@
 var nodemailer = require("nodemailer");
 
 
-export async function sendMailNodemailer(subject, toEmail, message) {
+export async function sendMailNodemailer(subject, senderEmail, message) {
 
 
   return new Promise((resolve, reject) => {
@@ -16,8 +16,12 @@ export async function sendMailNodemailer(subject, toEmail, message) {
     });
 
     var mailOptions = {
+      // Gmail requires the authenticated account as the sender.
       from: process.env.NODEMAILER_EMAIL,
-      to: toEmail,
+      // Deliver the message to the site owner, not the visitor.
+      to: process.env.NODEMAILER_EMAIL,
+      // So hitting "Reply" replies to the visitor who filled the form.
+      replyTo: senderEmail,
       subject: subject,
       text: message,
     };

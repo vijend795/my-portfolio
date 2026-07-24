@@ -1,14 +1,11 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
 import projectImage2 from '@/public/images/projectPic/2/mobileView/1.png'
 import projectImage1 from '@/public/images/projectPic/Portfoliowebsite/PortfolioWebsiteMain.png'
 import projectImage3 from "@/public/images/projectPic/SonoAmore/codebasesnippet.png"
 import projectImage4 from "@/public/images/projectPic/kiwifeeds/projectImage1.png"
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import navyaImg from "@/public/images/projectPic/navya/navya.png"
 
 export const navLinks = [
   // {
@@ -69,6 +66,42 @@ export const experienceTags=[
 ]
 export const experiencesData = [
   {
+    title: "Master of Information Technology (Level 9)",
+    company:'Whitecliffe, School of Information Technology',
+    location: "Wellington, New Zealand",
+    description:
+    `Enrolled in a Level 9 Master of Information Technology, commencing July 2026, to deepen my expertise in advanced software development and emerging technologies including artificial intelligence.`,
+    icon: React.createElement(LuGraduationCap),
+    date: "July 2026 - Present",
+    experienceType:'education',
+    skilledLearned:['AI','Advanced Software Development','Research'],
+    status:"OnGoing",
+  },
+  {
+    title: "Bachelor of Applied Information Technology",
+    company:'Whitecliffe, School of Information Technology',
+    location: "Wellington, New Zealand",
+    description:
+    `Completed a Bachelor of Applied Information Technology in 2026. Built strong full-stack development skills and delivered Navya, a live AI-powered learning platform using a self-hosted LLM (Ollama / Phi), Django and PostgreSQL.`,
+    icon: React.createElement(LuGraduationCap),
+    date: "2024 - 2026",
+    experienceType:'education',
+    skilledLearned:['Django','React','Next.js','PostgreSQL','AI Integration','Ollama','Docker','Git'],
+    status:"completed",
+  },
+  {
+    title: "Micro-credentials: Cyber Technician & Ethical Hacking",
+    company:'',
+    location: "New Zealand",
+    description:
+    `Completed industry micro-credentials in Cyber Technician and Ethical Hacking, building foundational skills in cyber security, networking and penetration-testing concepts.`,
+    icon: React.createElement(LuGraduationCap),
+    date: "2024",
+    experienceType:'education',
+    skilledLearned:['Cyber Security','Ethical Hacking','Networking'],
+    status:"completed",
+  },
+  {
     title: "Internship - Django Developer",
     company:'Whitecliffe, School of Information Technology',
     location: "Wellington, New Zealand",
@@ -81,13 +114,13 @@ export const experiencesData = [
     status:"OnGoing",
   },
   {
-    title: "Diploma in software Development (Level 6)",
+    title: "Diploma in Software Development (Level 6)",
     company:'Whitecliffe, School of Information Technology',
     location: "Wellington, New Zealand",
     description:
-    `Completed a comprehensive Level 6 Diploma in Software Development at Whitecliffe,.
-    Worked on various project during my studies with framework like Next.js, React Native and Django.
-    Acquired expertise in technologies including Node.js, API's, Tailwind, Postgres, Express, etc `,
+    `Completed a comprehensive Level 6 Diploma in Software Development at Whitecliffe.
+    Worked on various projects during my studies with frameworks like Next.js, React Native and Django.
+    Acquired expertise in technologies including Node.js, APIs, Tailwind, Postgres and Express.`,
     icon: React.createElement(LuGraduationCap),
     date: "Feb 2023 - December 2023",
     experienceType:'education',
@@ -223,15 +256,27 @@ export const experiencesData = [
 ] 
 export const projectsData = [
   {
+    id:'0',
+    title: "Navya - AI Learning Platform",
+    type:'Live Product',
+    date:'2026',
+    description:
+      `A live, AI-powered learning platform for students. It uses a self-hosted LLM (Ollama running Microsoft's Phi model) for student profiling and personalised learning, delivering interactive quizzes and assignments across subjects like maths, science, coding and English. Built with a Django backend and PostgreSQL database.`,
+    tags: ["Django", "PostgreSQL", "Ollama", "Phi LLM", "AI"],
+    imageUrl: navyaImg,
+    projectLink:'',
+    websiteLink:'https://education.vestudio.dev',
+  },
+  {
     id:'1',
     title: "Portfolio Website",
     type:'My Project',
     description:
       `Created portfolio website to demonstrate my updated work to people and hosted on vercel for live demo `,
-    tags: [, "Next.js 13", "Tailwind"],
+    tags: ["Next.js 13", "Tailwind"],
     imageUrl: projectImage1,
     projectLink:'https://github.com/vijend795/my-portfolio.git',
-    websiteLink:'',
+    websiteLink:'https://my-portfolio-s7ob.vercel.app',
   },
   {
     id: "2",
@@ -251,7 +296,7 @@ export const projectsData = [
     type:'College Project-individual',
     date:'Q4 2023',
     description:
-      "Developed a music application with nodejs, express and mongodb Database and setup authentication and permission and perform  curd operations over Postman.",
+      "Developed a music application with Node.js, Express and a MongoDB database, with authentication and permissions, and performed CRUD operations over Postman.",
     tags: ["Node.js", "Mongodb", "Express", "yaml"],
     imageUrl: projectImage3,
     projectLink:'https://github.com/vijend795/SonoAmoreMusicApp.git',
@@ -339,6 +384,42 @@ export const skillsData = [
   },
   {
     name: "Django",
+    status:"Active"
+  },
+  {
+    name: "Node.js",
+    status:"Active"
+  },
+  {
+    name: "Docker",
+    status:"Active"
+  },
+  {
+    name: "DigitalOcean",
+    status:"Active"
+  },
+  {
+    name: "Vercel",
+    status:"Active"
+  },
+  {
+    name: "Ollama",
+    status:"Active"
+  },
+  {
+    name: "AI Integration",
+    status:"Active"
+  },
+  {
+    name: "Claude Code",
+    status:"Active"
+  },
+  {
+    name: "Cyber Security",
+    status:"Active"
+  },
+  {
+    name: "Ethical Hacking",
     status:"Active"
   },
   {

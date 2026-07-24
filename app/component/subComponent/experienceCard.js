@@ -9,7 +9,7 @@ const ExperienceCard = ({ item ,index}) => {
     >
       <div className="font-bold text-slate-900">{item.title}</div>
       <div className="text-black text-md ">{item.location}</div>
-      <div className="text-slate-500 max-w-[1300px] text-sm pt-1 text-justify whitespace-pre-line">
+      <div className="text-slate-500 max-w-[1300px] text-sm pt-1 text-left whitespace-pre-line">
         {item.description}
       </div>
       <div>
