@@ -64,8 +64,7 @@ export default function ContactUs() {
       className="container mx-auto p-6 max-w-[53rem]"
       // className='container mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40 flex flex-col justify-start items-center'
     >
-      <Heading>Contact Me   
-      </Heading>
+      <Heading>Contact Me</Heading>
       <p className="mb-5 px-2 text-sm text-center text-gray-700">
         Please contact me directly at{" "}
         <a
@@ -114,7 +113,7 @@ export default function ContactUs() {
         </div>
         <div className="mb-6">
           <label htmlFor="remark" className="block text-gray-600 font-semibold">
-            Remark
+            Message
           </label>
           <textarea
             id="remark"
@@ -124,7 +123,7 @@ export default function ContactUs() {
             onChange={handleChange}
             required
             className="w-full p-2 border border-gray-300 rounded"
-            placeholder="Your Message"
+            placeholder="Your message"
           ></textarea>
         </div>
         <div className="flex justify-center">

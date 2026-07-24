@@ -36,23 +36,16 @@ const Intro = () => {
 
         {/* <div className="flex text-lg text-gray-600 whitespace-pre-line rounded-full bg-red-100 text-center p-2 overflow-hidden text-wrap"> */}
           <p className="text-sm md:text-lg font-sans subpixel-antialiased text-gray-600 text-left py-0 md:p-4">
-            a full-stack software developer based in Wellington, New Zealand. I
-            have completed a Bachelor of Applied Information Technology and am
-            now studying towards a Master of Information Technology (Level 9). I
-            build full-stack web and mobile applications with Django, React,
-            React Native and Next.js, backed by PostgreSQL. Most recently I
-            launched Navya, a live, AI-powered learning platform that uses a
-            self-hosted LLM (Ollama running Microsoft&apos;s Phi model) to
-            personalise learning for students through quizzes and assignments. I
-            also hold micro-credentials in Cyber Technician and Ethical Hacking.
-            Alongside my technical skills, I bring 15+ years of professional
-            experience across accounts, operations and client-facing roles,
-            giving me strong analytical thinking, attention to detail and
-            Excel/VBA automation skills. As a New Zealand permanent resident
-            with a full NZ driver&apos;s licence, I am eligible to work here
-            without restriction. Fuelled by a genuine passion for technology and
-            continuous learning, my goal is to keep growing as a developer who
-            ships practical, user-focused solutions.
+            I&apos;m a full-stack developer based in Wellington, New Zealand,
+            with a Bachelor of Applied Information Technology and a Master of
+            Information Technology underway. I build web and mobile applications
+            with Django, React, React Native and Next.js &mdash; most recently
+            launching Navya, a live, AI-powered learning platform that runs a
+            self-hosted LLM to personalise learning for students. Backed by 15+
+            years across operations and client-facing roles, I pair strong
+            engineering with sharp analytical thinking. As a New Zealand
+            permanent resident with a full driver&apos;s licence, I&apos;m
+            eligible to work here without restriction.
           </p>
         {/* </div> */}
         

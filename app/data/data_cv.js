@@ -70,11 +70,11 @@ export const experiencesData = [
     company:'Whitecliffe, School of Information Technology',
     location: "Wellington, New Zealand",
     description:
-    `Enrolled in a Level 9 Master of Information Technology, commencing July 2026, to deepen my expertise in advanced software development and emerging technologies including artificial intelligence.`,
+    `Pursuing a Level 9 Master of Information Technology (commencing July 2026), specialising in cyber security, to deepen my expertise in securing modern systems and emerging technologies.`,
     icon: React.createElement(LuGraduationCap),
     date: "July 2026 - Present",
     experienceType:'education',
-    skilledLearned:['AI','Advanced Software Development','Research'],
+    skilledLearned:['Cyber Security','Network Security','Research'],
     status:"OnGoing",
   },
   {
@@ -106,9 +106,9 @@ export const experiencesData = [
     company:'Whitecliffe, School of Information Technology',
     location: "Wellington, New Zealand",
     description:
-    `Building a student attendance program for the institute to manage and update student information, track progress, and provide an interface for various users to update and access the required information`,
+    `Building a student attendance system for the institute to manage student records and track progress, giving different user roles a tailored interface for accessing and updating information.`,
     icon: React.createElement(CgWorkAlt),
-    date: "December 2023- till date",
+    date: "December 2023 - Present",
     experienceType:'job',
     skilledLearned:['Django',"Tailwind","Postgres","Data Structure","MicroServices","Agile Project Management","GitHub","API's"],
     status:"OnGoing",
@@ -118,9 +118,7 @@ export const experiencesData = [
     company:'Whitecliffe, School of Information Technology',
     location: "Wellington, New Zealand",
     description:
-    `Completed a comprehensive Level 6 Diploma in Software Development at Whitecliffe.
-    Worked on various projects during my studies with frameworks like Next.js, React Native and Django.
-    Acquired expertise in technologies including Node.js, APIs, Tailwind, Postgres and Express.`,
+    `Completed a Level 6 Diploma in Software Development at Whitecliffe, building projects with Next.js, React Native and Django, and gaining hands-on experience with Node.js, REST APIs, Tailwind, PostgreSQL and Express.`,
     icon: React.createElement(LuGraduationCap),
     date: "Feb 2023 - December 2023",
     experienceType:'education',
@@ -132,8 +130,7 @@ export const experiencesData = [
     company:'Wilson Parking NZ Limited',
     location: "Wellington, New Zealand",
     description:
-      `Currently working full time as a Parking Enforcement Officer at Wilson Parking NZ Limited.
-      Entrusted with the responsibility of enforcing parking regulations using cutting-edge automobile solutions, involving real-time data handling for effective parking enforcement`,
+      `Enforcing parking regulations across sites using in-vehicle enforcement technology and real-time data handling for accurate, efficient operations.`,
     icon: React.createElement(CgWorkAlt),
     date: "June 2022 - Present",
     experienceType:'job',
@@ -144,8 +141,7 @@ export const experiencesData = [
     company:'Whitecliffe, School of Information Technology',
     location: "Wellington, New Zealand",
     description:
-      `Successfully completed a 6-month Certification in Information Technology at Whitecliffe.
-      Learned proficiency in HTML, CSS, Next.js, Figma, Python, and React, laying a solid foundation for a career in IT`,
+      `Completed a six-month Certification in Information Technology at Whitecliffe, gaining proficiency in HTML, CSS, Next.js, Figma, Python and React — a solid foundation for a career in IT.`,
     icon: React.createElement(LuGraduationCap),
     date: "May 2022 - December 2022",
     experienceType:'education',
@@ -157,8 +153,7 @@ export const experiencesData = [
     company:'Realty Redefine',
     location: "Gurgaon, India",
     description:
-     `Contributed as a Real Estate Consultant at Realty Redefine.
-     Specialized in commercial leasing and played a pivotal role in developing an online search portal, managing social media, and implementing a data management system using VBA`,
+     `Specialised in commercial leasing while helping build an online property search portal, managing social media, and implementing a VBA-based data management system.`,
     icon: React.createElement(CgWorkAlt),
     date: "June 2018 - March 2022",
     status:"completed",
@@ -170,9 +165,7 @@ export const experiencesData = [
     company: 'Leasing India Private Limited',
     location: 'Delhi, India',
     description: 
-    `Worked as a Transaction Manager at Leasing India Private Limited.
-    Successfully facilitated commercial leasing deals, leasing out office space, warehouses, and factory spaces in Gurgaon.
-    Collaborated with renowned brands such as Kyocera, Havells, Dr. Batra, Call Health, and more`,
+    `Facilitated commercial leasing deals for office, warehouse and factory space in Gurgaon, working with brands including Kyocera, Havells, Dr. Batra and Call Health.`,
     icon: React.createElement(CgWorkAlt),
     date: 'July 2013 - May 2018',
     experienceType: 'job',
@@ -183,8 +176,7 @@ export const experiencesData = [
     company: 'Transaction Point',
     location: 'Gurgaon, India',
     description: 
-    `Contributed as an Associate Partner at Transaction Point.
-    Played a key role in Sales and Marketing for commercial and residential projects, successfully selling residential projects of Avalon in Bhiwadi.`,
+    `Drove sales and marketing for commercial and residential projects, including the successful sale of Avalon's residential development in Bhiwadi.`,
     icon: React.createElement(CgWorkAlt),
     date: 'July 2012 - June 2013',
     experienceType: 'job',
@@ -194,7 +186,7 @@ export const experiencesData = [
     title: 'Manager - Sales and Marketing',
     company: 'Global Realty Ventures Limited',
     location: 'Delhi, India',
-    description: 'Worked as a Sales and Marketing Manager and managed commercial/retail properties across Delhi/NCR. Sold and leased out properties to various retail and commercial brands.',
+    description: 'Managed commercial and retail properties across Delhi/NCR, selling and leasing space to a range of retail and commercial brands.',
     icon: React.createElement(CgWorkAlt),
     date: 'March 2011 - July 2012',
     experienceType: 'job',
@@ -205,8 +197,7 @@ export const experiencesData = [
     company: 'Global School of Animation and Games',
     location: 'Delhi, India',
     description: 
-    `Held the position of Project Manager at Global School of Animation and Games.
-    Managed the leasing of commercial office space, warehouses, and factory spaces in Gurgaon, working with brands such as BO Concept, Jindal Lifestyle, Korea Tourism Organization, BHPC, Samsung , TYCO, Medrix and more.`,
+    `Managed the leasing of office, warehouse and factory space in Gurgaon, working with brands such as BO Concept, Jindal Lifestyle, Korea Tourism Organization, BHPC, Samsung, TYCO and Medrix.`,
     icon: React.createElement(CgWorkAlt),
     date: 'June 2009 - Feb 2011',
     experienceType: 'job',
@@ -217,9 +208,7 @@ export const experiencesData = [
     company: 'g2 Solution India Pvt. Ltd',
     location: 'Noida, India',
     description: 
-    `Worked as an Admin and Accounts Manager at g2 Solution India Pvt.
-    Directed financial management functions, including the development of financial statements, forecasts, and budgets.
-    Oversaw general accounting functions, account reconciliation, and cash management`,
+    `Directed financial management functions — financial statements, forecasts and budgets — and oversaw general accounting, account reconciliation and cash management.`,
     icon: React.createElement(CgWorkAlt),
     date: 'June 2007 - April 2009',
     experienceType: 'job',
@@ -230,9 +219,7 @@ export const experiencesData = [
     company: 'Academy of Animation and Gaming (AAG)',
     location: 'Noida, India',
     description: 
-    `Acted as an Accounts Executive (Core Team Member) at the Academy of Animation and Gaming (AAG).
-    Prepared financial reports, developed budgets, and performed variance analysis.
-    Led teams in carrying out special projects and internal audits to ensure regulatory compliance.`,
+    `Prepared financial reports, developed budgets and performed variance analysis, while leading teams on special projects and internal audits to ensure regulatory compliance.`,
     icon: React.createElement(CgWorkAlt),
     date: 'Aug 2006 - May 2007',
     experienceType: 'job',
@@ -243,9 +230,7 @@ export const experiencesData = [
     company: 'Asasa Video Pvt. Ltd.',
     location: 'New Delhi, India',
     description: 
-    `Served as an Accountant at Asasa Video Pvt. Ltd.
-    Closed and prepared monthly financial statements and audit reports.
-    Monitored general ledger transactions and collaborated with the controller to ensure the accuracy of financial information`,
+    `Prepared and closed monthly financial statements and audit reports, monitored general-ledger transactions, and worked with the controller to ensure the accuracy of financial information.`,
     icon: React.createElement(CgWorkAlt),
     date: 'Nov 2004 - July 2006',
     experienceType: 'job',
@@ -257,11 +242,11 @@ export const experiencesData = [
 export const projectsData = [
   {
     id:'0',
-    title: "Navya - AI Learning Platform",
+    title: "Navya — AI Learning Platform",
     type:'Live Product',
     date:'2026',
     description:
-      `A live, AI-powered learning platform for students. It uses a self-hosted LLM (Ollama running Microsoft's Phi model) for student profiling and personalised learning, delivering interactive quizzes and assignments across subjects like maths, science, coding and English. Built with a Django backend and PostgreSQL database.`,
+      `A live, AI-powered learning platform for students. It uses a self-hosted LLM (Ollama running Microsoft's Phi model) for student profiling and personalised learning, delivering interactive quizzes and assignments across subjects such as maths, science, coding and English. Built with a Django backend and a PostgreSQL database.`,
     tags: ["Django", "PostgreSQL", "Ollama", "Phi LLM", "AI"],
     imageUrl: navyaImg,
     projectLink:'',
@@ -270,9 +255,9 @@ export const projectsData = [
   {
     id:'1',
     title: "Portfolio Website",
-    type:'My Project',
+    type:'Personal Project',
     description:
-      `Created portfolio website to demonstrate my updated work to people and hosted on vercel for live demo `,
+      `A personal portfolio built with Next.js 13 and Tailwind CSS to showcase my work, deployed live on Vercel.`,
     tags: ["Next.js 13", "Tailwind"],
     imageUrl: projectImage1,
     projectLink:'https://github.com/vijend795/my-portfolio.git',
@@ -280,11 +265,11 @@ export const projectsData = [
   },
   {
     id: "2",
-    title: "GoNZ -Travel Website",
-    type:'College Project-Individual',
+    title: "GoNZ — Travel Website",
+    type:'College Project · Individual',
     date:'Q3 2023',
     description:
-      "Developed a college project website using Django from the ground up, focused on travel. The site features a user-friendly navigation bar with dynamic icons that highlight the current page. Utilized Django's authentication and group permission functionalities to manage access to various details and pages.",
+      "A travel website built from the ground up with Django. It features a dynamic navigation bar that highlights the current page, and uses Django's authentication and group permissions to control access to pages and content.",
     tags: ["Django", "Python", "Tailwind", "sqlite3"],
     imageUrl: projectImage2,
     projectLink:'https://github.com/vijend795/Project2_GoNZ.git',
@@ -292,11 +277,11 @@ export const projectsData = [
   },
   {
     id: "3",
-    title: "Music App-Sono Amore",
-    type:'College Project-individual',
+    title: "Sono Amore — Music App",
+    type:'College Project · Individual',
     date:'Q4 2023',
     description:
-      "Developed a music application with Node.js, Express and a MongoDB database, with authentication and permissions, and performed CRUD operations over Postman.",
+      "A music application built with Node.js, Express and MongoDB, featuring authentication and permissions, with CRUD operations tested through Postman.",
     tags: ["Node.js", "Mongodb", "Express", "yaml"],
     imageUrl: projectImage3,
     projectLink:'https://github.com/vijend795/SonoAmoreMusicApp.git',
@@ -304,11 +289,11 @@ export const projectsData = [
   },
   {
     id: "4",
-    title: "Website-KiwiFeeds",
-    type:'College Project-group',
+    title: "KiwiFeeds — Restaurant Ratings",
+    type:'College Project · Group',
     date:'Q3 2023',
     description:
-      "Developed a website for online rating system for restaurants  build with django framework with user permission and authentication.",
+      "A restaurant rating platform built with Django, featuring user authentication and role-based permissions. Developed as a group project.",
     tags: ["Django", "Python", "Tailwind", "sqlite3"],
     imageUrl: projectImage4,
     projectLink:'https://github.com/AMarieP/IT6006_Development_of_an_Enterprise_Web_Application.git',
